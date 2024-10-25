@@ -1,9 +1,16 @@
 #include <iostream>
 #include <vector>
+#include <limits>
 using namespace std;
 
 pair<float, float> minMax(const vector<float>&A)
 {
+    if(A.size() == 0)
+    {
+        float mi = numeric_limits<float>::min();
+        float ma = numeric_limits<float>::max();
+        return make_pair(mi, ma);
+    }
     float mi = A[0], ma = A[0];
     for(int i = 0; i < A.size(); ++i)
     {
