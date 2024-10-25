@@ -3,7 +3,7 @@
 using namespace std;
 
 bool remove_first_negative_element(vector<int>& vec, int& removed_element)
-//как удалить элемент, если мы пишем, что вектор константа? я убрал const
+//РєР°Рє СѓРґР°Р»РёС‚СЊ СЌР»РµРјРµРЅС‚, РµСЃР»Рё РјС‹ РїРёС€РµРј, С‡С‚Рѕ РІРµРєС‚РѕСЂ РєРѕРЅСЃС‚Р°РЅС‚Р°? СЏ СѓР±СЂР°Р» const
 {
     int b = 0;
     for(int i = 0; i < vec.size(); ++i)
